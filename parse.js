@@ -11,9 +11,10 @@
   for (var i = 0; i < chart1.length; i++) {
     let ch =chart1[i];
     let j = i+1;
-    let st = "Номер в чарте "+j+"  :"+ ch.url;
+    let st = "Номер в чарте "+j+"  :"+ch.url;
+    let link = ch.url;
     console.log("Номер в чарте "+j+"  :"+ ch.url);
-    document.getElementsByClassName("wrap")[0].innerHTML = document.getElementsByClassName("wrap")[0].innerHTML +'<p>'+st+'</p> ';
+    document.getElementsByClassName("wrap")[0].innerHTML = document.getElementsByClassName("wrap")[0].innerHTML +'<p>'+'<a href="'+link+'">'+st+'</a>'+'</p>';
   }
   return console.log(chart1);
 
